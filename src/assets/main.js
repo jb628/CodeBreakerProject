@@ -23,6 +23,10 @@ function setHiddenFields() {
     answer.value = stringNumber;
   }
 
+function setMesssage(f) {
+  let message = document.getElementById('message');
+  message.innerHTML = f;
+}
 
 
   /*switch (answer.value) {
