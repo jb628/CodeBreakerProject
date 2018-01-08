@@ -22,10 +22,20 @@ function setHiddenFields() {
   } else {
     answer.value = stringNumber;
   }
+}
 
-function setMesssage(f) {
+function setMessage(text) {
   let message = document.getElementById('message');
-  message.innerHTML = f;
+  message.innerHTML = text;
+}
+
+function validateInput(input){
+  if (input.length == 4) {
+    return true;
+  } else {
+    setMessage("Guesses must be exactly 4 characters long");
+    return false;
+  }
 }
 
 
@@ -49,8 +59,6 @@ function setMesssage(f) {
       console.log(stringNumber);
       answer.value = stringNumber;
   }*/
-
-}
 
 setHiddenFields();
 /*let f = Math.floor(Math.random()*10000);
