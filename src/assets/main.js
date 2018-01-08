@@ -8,7 +8,7 @@ function guess() {
 
 //implement new functions here
 function setHiddenFields() {
-  answer.value = 7;
+  answer.value = Math.floor(Math.random()*10000);
   stringNumber = answer.value.toString();
   if (answer.value < 10) {
     stringNumber = "000" + stringNumber;
